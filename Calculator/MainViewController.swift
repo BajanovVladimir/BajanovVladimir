@@ -37,10 +37,11 @@ class MainViewController: UIViewController {
 }
     
     @IBAction func changeViewControlSegmentControl(_ sender: UISegmentedControl) {
+        
+        UIView.transition(from: normalViewController.view, to: engineeringViewController.view, duration: 1, options:[.curveEaseOut, .transitionFlipFromLeft, .showHideTransitionViews])
         normalViewController.view.isHidden = true
         engineeringViewController.view.isHidden = true
-        
-       if sender.selectedSegmentIndex == 0 {
+        if sender.selectedSegmentIndex == 0 {
             normalViewController.view.isHidden = false
         } else {
            engineeringViewController.view.isHidden = false

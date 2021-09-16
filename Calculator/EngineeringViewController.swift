@@ -25,9 +25,9 @@ class EngineeringViewController: UIViewController {
             let valueArray = value.components(separatedBy: ".")
             if valueArray[1] == "0" {
                 resultOutputLabel.text = "\(valueArray[0])"
-            } else {
-              resultOutputLabel.text = "\(newValue)"
-              }
+        } else {
+                 resultOutputLabel.text = "\(newValue)"
+          }
              enteringNumber = true
         }
     }
@@ -38,17 +38,17 @@ class EngineeringViewController: UIViewController {
     }
     
     @IBAction func numberButtonPress(_ sender: UIButton) {
-        if !errorOccurrence{
+     if !errorOccurrence{
         let number = sender.currentTitle!
         if enteringNumber {
          if resultOutputLabel.text!.count < 15 {
          resultOutputLabel.text = resultOutputLabel.text! + number
          }
-        } else {
-           resultOutputLabel.text  = number
-            enteringNumber = true
-        }
-      }
+         } else {
+                resultOutputLabel.text  = number
+                enteringNumber = true
+           }
+     }
     }
     
     @IBAction func operationEntryButtonPress(_ sender: UIButton) {
@@ -59,7 +59,8 @@ class EngineeringViewController: UIViewController {
         }
     }
     
-    @IBAction func equalButtonPress(_ sender: UIButton) { if !errorOccurrence {
+    @IBAction func equalButtonPress(_ sender: UIButton) {
+      if !errorOccurrence {
         if enteringNumber {
         secondOperand = operandValue
         switch operation {
@@ -74,8 +75,8 @@ class EngineeringViewController: UIViewController {
                 firstOperand = 1/firstOperand
             }
                 for _ in 1...degree {
-              operandValue = operandValue * firstOperand
-            }
+                 operandValue = operandValue * firstOperand
+                }
         }
         case "+": operateWithTwoOperand{$0 + $1}
         case "-": operateWithTwoOperand{$0 - $1}
@@ -96,7 +97,7 @@ class EngineeringViewController: UIViewController {
     enteringNumber = false
     operation = ""
     dotIsSet = false
-    }
+  }
     
     @IBAction func cleanButtonPress(_ sender: UIButton) {
         firstOperand = 0
@@ -109,15 +110,15 @@ class EngineeringViewController: UIViewController {
     }
     
     @IBAction func remaveTheLastCharesterButtonPress(_ sender: UIButton) {
-        if enteringNumber && !errorOccurrence {
+      if enteringNumber && !errorOccurrence {
         if resultOutputLabel.text!.count > 1 {
         resultOutputLabel.text!.remove(at: resultOutputLabel.text!.index(before: resultOutputLabel.text!.endIndex))
-    } else {
+        } else {
             resultOutputLabel.text = "0"
             enteringNumber = false
-      }
-    }
- }
+          }
+        }
+     }
     
     @IBAction func signChangeButtonPress(_ sender: UIButton) {
         if !errorOccurrence {
@@ -126,7 +127,7 @@ class EngineeringViewController: UIViewController {
     }
     
     @IBAction func squareRootButtonPress(_ sender: UIButton) {
-        if !errorOccurrence {
+       if !errorOccurrence {
         if operandValue >= 0 {
         enteringNumber = false
         operandValue = sqrt(operandValue)
@@ -135,19 +136,19 @@ class EngineeringViewController: UIViewController {
             resultOutputLabel.minimumScaleFactor = 0.2
           resultOutputLabel.text = "Недопустимая операция"
             errorOccurrence = true
+          }
         }
-     }
-   }
+    }
     
     @IBAction func decimalPointSettingButtonPress(_ sender: UIButton) {
-        if !errorOccurrence {
+       if !errorOccurrence {
         if enteringNumber && !dotIsSet {
             resultOutputLabel.text = resultOutputLabel.text! + "."
               dotIsSet = true
         } else  if !enteringNumber && !dotIsSet {
             resultOutputLabel.text = "0."
           }
-        }
+       }
     }
     
     @IBAction func percentButtonPress(_ sender: UIButton) {
@@ -158,7 +159,7 @@ class EngineeringViewController: UIViewController {
     }
     
     @IBAction func unitDividedByNumberButtonPress(_ sender: UIButton) {       
-        if !errorOccurrence{
+       if !errorOccurrence{
         if operandValue != 0{
         operandValue = 1/operandValue
         } else {
@@ -179,40 +180,38 @@ class EngineeringViewController: UIViewController {
     }
     
     @IBAction func tenToThePowerNumberButtonPress(_ sender: UIButton) {
-        if !errorOccurrence {
+       if !errorOccurrence {
         let degree = Int(operandValue)
         if degree < 11{
         operandValue = 1
         for _ in 0..<degree {
          operandValue = 10 * operandValue
         }
-      }
-     }
+        }
+       }
         enteringNumber = false
     }
     
     @IBAction func factorialNumberButtenPress(_ sender: UIButton) {
         enteringNumber = false
-        
-        
-        if !errorOccurrence {
+       if !errorOccurrence {
         let number = Int(operandValue)
         if number<0 { resultOutputLabel.adjustsFontSizeToFitWidth = true
             resultOutputLabel.minimumScaleFactor = 0.2
-          resultOutputLabel.text = "Недопустимая операция"
+            resultOutputLabel.text = "Недопустимая операция"
             errorOccurrence = true
         } else {
-        if operandValue == 0{
-        operandValue=1
-        } else {
-        operandValue=1
-        for col in 1...number {
+          if operandValue == 0{
+          operandValue=1
+          } else {
+            operandValue=1
+            for col in 1...number {
             operandValue = operandValue * Double(col)
-        }
-      }
+            }
+            }
+           }
+         }
     }
-   }
-  }
     
 }
 
