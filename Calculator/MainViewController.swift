@@ -23,14 +23,16 @@ class MainViewController: UIViewController {
         return viewController
     }()
      
-   override func viewDidLoad() {
+    @IBOutlet weak var keyboardConteinerView: UIView!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
         normalViewController.view.isHidden = false
     }
   
     private func addViewControllerAssChildViewController(chaildViewController:UIViewController){
     addChild(chaildViewController)
-    view.addSubview(chaildViewController.view)
+        keyboardConteinerView.addSubview(chaildViewController.view)
     chaildViewController.view.frame = view.bounds
     chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     chaildViewController.didMove(toParent: self)
