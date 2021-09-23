@@ -32,7 +32,7 @@ class MainViewController: UIViewController {
   
     private func addViewControllerAssChildViewController(chaildViewController:UIViewController){
     addChild(chaildViewController)
-        keyboardConteinerView.addSubview(chaildViewController.view)
+    keyboardConteinerView.addSubview(chaildViewController.view)
     chaildViewController.view.frame = view.bounds
     chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     chaildViewController.didMove(toParent: self)

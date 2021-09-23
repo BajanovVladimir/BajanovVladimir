@@ -22,9 +22,6 @@
                                 <state key="normal" title=".">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="decimalPointSetttingButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jYs-tn-OQH"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33j-9Y-5Yq">
                                 <rect key="frame" x="187.5" y="108" width="94" height="107.5"/>
@@ -32,9 +29,6 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RPE-f4-5Kf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAY-JJ-zao">
                                 <rect key="frame" x="94" y="431" width="93.5" height="108"/>
@@ -42,9 +36,6 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PuG-qX-5qU"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-DX-7ex">
                                 <rect key="frame" x="0.0" y="431" width="94" height="108"/>
@@ -52,9 +43,6 @@
                                 <state key="normal" title="√">
                                     <color key="titleColor" red="0.0" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="squareRootButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="97f-UI-Xuy"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYd-Oj-b6b">
                                 <rect key="frame" x="281.5" y="215.5" width="93.5" height="108"/>
@@ -62,10 +50,6 @@
                                 <state key="normal" title="-">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JF4-ot-JJz"/>
-                                    <action selector="operationEntryButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HKi-8x-R3q"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa0-bE-JgG">
                                 <rect key="frame" x="0.0" y="215.5" width="94" height="108"/>
@@ -73,9 +57,6 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N8i-BQ-dky"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6P-v6-ita">
                                 <rect key="frame" x="187.5" y="323.5" width="94" height="107.5"/>
@@ -83,9 +64,6 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wn5-Mp-OX7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-fz-VhE">
                                 <rect key="frame" x="94" y="108" width="93.5" height="107.5"/>
@@ -93,9 +71,6 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oB7-zC-YMi"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvO-Oa-FSb">
                                 <rect key="frame" x="94" y="215.5" width="93.5" height="108"/>
@@ -103,9 +78,6 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhD-O6-Dc6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAd-x6-hzP">
                                 <rect key="frame" x="0.0" y="108" width="94" height="107.5"/>
@@ -113,9 +85,6 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bdq-qx-xGp"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l84-c0-hJv">
                                 <rect key="frame" x="0.0" y="323.5" width="94" height="107.5"/>
@@ -123,9 +92,6 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNV-zg-g4q"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbL-Gc-L9e">
                                 <rect key="frame" x="187.5" y="215.5" width="94" height="108"/>
@@ -133,9 +99,6 @@
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ojj-hC-jpV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd5-ZG-WzC">
                                 <rect key="frame" x="281.5" y="431" width="93.5" height="108"/>
@@ -143,9 +106,6 @@
                                 <state key="normal" title="=">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fw-VE-VjI"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTg-lH-FJ1">
                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="108"/>
@@ -153,10 +113,6 @@
                                 <state key="normal" title="÷">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NaH-fy-nOS"/>
-                                    <action selector="operationEntryButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywn-7F-Ylz"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vL-Nc-NRg">
                                 <rect key="frame" x="281.5" y="323.5" width="93.5" height="107.5"/>
@@ -164,10 +120,6 @@
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ghb-P5-2f0"/>
-                                    <action selector="operationEntryButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1i-VA-umK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QT4-D7-SFd">
                                 <rect key="frame" x="94" y="323.5" width="93.5" height="107.5"/>
@@ -175,9 +127,6 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9IT-lI-MRb"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPx-NU-l09">
                                 <rect key="frame" x="187.5" y="0.0" width="94" height="108"/>
@@ -185,9 +134,6 @@
                                 <state key="normal" title="+/-">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="signChangeButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWL-YO-BJ7"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypn-hU-kh2">
                                 <rect key="frame" x="94" y="0.0" width="93.5" height="108"/>
@@ -195,9 +141,6 @@
                                 <state key="normal" title="C">
                                     <color key="titleColor" red="0.0" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="cleanButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4R-UY-cFw"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvI-zz-cEp">
                                 <rect key="frame" x="0.0" y="0.0" width="94" height="108"/>
@@ -205,9 +148,6 @@
                                 <state key="normal" title="←">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="removeTheLastCharasterButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2e-kN-dzM"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVu-NV-3Yr">
                                 <rect key="frame" x="281.5" y="108" width="93.5" height="107.5"/>
@@ -215,10 +155,6 @@
                                 <state key="normal" title="×">
                                     <color key="titleColor" red="0.1958041958" green="0.020979020979999999" blue="0.90209790209999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2e-pq-cfc"/>
-                                    <action selector="operationEntryButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bx9-1i-g9Y"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xif-Uu-XJT"/>
@@ -404,43 +340,26 @@
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="←"/>
-                                <connections>
-                                    <action selector="remaveTheLastCharesterButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="5oi-E2-9CP"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-JV-aMz">
                                 <rect key="frame" x="75" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="C"/>
-                                <connections>
-                                    <action selector="cleanButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="uMI-EP-9yg"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-i8-ZRw">
                                 <rect key="frame" x="150" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="+/-"/>
-                                <connections>
-                                    <action selector="signChangeButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="4Qt-Vy-w34"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rt0-Oz-alu">
                                 <rect key="frame" x="225" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="÷"/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="HBL-5O-4xW"/>
-                                    <action selector="operationEntryButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="o94-qi-9Kj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYa-KD-ONd">
                                 <rect key="frame" x="300" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="%"/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="5kU-HK-Kob"/>
-                                    <action selector="percentButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="orF-bk-4EO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-H0-cZ4">
                                 <rect key="frame" x="0.0" y="123.5" width="75" height="123.5"/>
@@ -448,9 +367,6 @@
                                 <state key="normal" title="7">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="VoM-zk-JR4"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvl-Oa-Pmp">
                                 <rect key="frame" x="75" y="123.5" width="75" height="123.5"/>
@@ -458,9 +374,6 @@
                                 <state key="normal" title="8">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="tIW-UA-E5Z"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xem-vp-fGT">
                                 <rect key="frame" x="150" y="123.5" width="75" height="123.5"/>
@@ -468,27 +381,16 @@
                                 <state key="normal" title="9">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="Ehw-VL-2t8"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ei3-5z-nSs">
                                 <rect key="frame" x="225" y="123.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="×"/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="0Vc-jZ-199"/>
-                                    <action selector="operationEntryButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="zbl-rX-uYV"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcZ-t6-V3d">
                                 <rect key="frame" x="300" y="123.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="xⁿ"/>
-                                <connections>
-                                    <action selector="degreeNumberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="qc6-Jk-nts"/>
-                                    <action selector="operationEntryButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="9LV-Hr-UAf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLp-pk-bEX">
                                 <rect key="frame" x="0.0" y="247" width="75" height="124"/>
@@ -496,9 +398,6 @@
                                 <state key="normal" title="4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="WSx-Tf-geQ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpK-7T-hGg">
                                 <rect key="frame" x="75" y="247" width="75" height="124"/>
@@ -506,9 +405,6 @@
                                 <state key="normal" title="5">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="o1d-HG-fdf"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tZ-OQ-O5h">
                                 <rect key="frame" x="150" y="247" width="75" height="124"/>
@@ -516,26 +412,16 @@
                                 <state key="normal" title="6">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="Hgn-zD-sEO"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84y-Vd-2Xg">
                                 <rect key="frame" x="225" y="247" width="75" height="124"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="-"/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="742-MP-b2J"/>
-                                    <action selector="operationEntryButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="xR9-am-9NH"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rR-BA-p0q">
                                 <rect key="frame" x="300" y="247" width="75" height="124"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="n!"/>
-                                <connections>
-                                    <action selector="factorialNumberButtenPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="e50-Ny-jpb"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-Gt-Uhi">
                                 <rect key="frame" x="0.0" y="371" width="75" height="123.5"/>
@@ -543,9 +429,6 @@
                                 <state key="normal" title="1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="BA4-ci-HuI"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohO-RA-lX9">
                                 <rect key="frame" x="75" y="371" width="75" height="123.5"/>
@@ -553,9 +436,6 @@
                                 <state key="normal" title="2">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="dAv-YM-1kb"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-lJ-oRB">
                                 <rect key="frame" x="150" y="371" width="75" height="123.5"/>
@@ -563,26 +443,16 @@
                                 <state key="normal" title="3">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="iPi-yt-hv9"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ9-qW-MuQ">
                                 <rect key="frame" x="225" y="371" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="+"/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="2ZN-f2-KGL"/>
-                                    <action selector="operationEntryButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="SQR-Ba-K4T"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rI-ej8">
                                 <rect key="frame" x="0.0" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="√"/>
-                                <connections>
-                                    <action selector="squareRootButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="fK6-kJ-Buy"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-ET-lVa">
                                 <rect key="frame" x="75" y="494.5" width="75" height="123.5"/>
@@ -590,42 +460,26 @@
                                 <state key="normal" title="0">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="numberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="3yA-dO-Nwd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-Mp-e1d">
                                 <rect key="frame" x="150" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="."/>
-                                <connections>
-                                    <action selector="decimalPointSettingButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="2Mp-EV-8Tn"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-xT-2HO">
                                 <rect key="frame" x="225" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="10ⁿ"/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="nOL-jx-W8X"/>
-                                    <action selector="tenToThePowerNumberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="09K-Qm-etJ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-RO-ODO">
                                 <rect key="frame" x="300" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="="/>
-                                <connections>
-                                    <action selector="equalButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="KoQ-xX-Jct"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WU-YT-Xbj">
                                 <rect key="frame" x="300" y="371" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="1/x"/>
-                                <connections>
-                                    <action selector="unitDividedByNumberButtonPress:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="aSG-0Y-R1z"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ym2-7J-oFl"/>
