@@ -9,6 +9,16 @@ import UIKit
 
 class EngineeringViewController: UIViewController {
 
-   
-}
+    var inputDelegate: KeyboardDataProtocol?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+
+    @IBAction func numberPressed(_ sender: UIButton) {
+        inputDelegate?.enteringNumberTransmission(number: sender.currentTitle!)
+    }
+    
+
+}

@@ -11,7 +11,7 @@
         <!--Обычный-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="NormalViewController" id="BYZ-38-t0r" customClass="NormalViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NormalVC" id="BYZ-38-t0r" customClass="NormalViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ap0-Nh-rn7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -19,86 +19,147 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG6-SR-hUG">
                                 <rect key="frame" x="0.0" y="0.0" width="94" height="108"/>
                                 <state key="normal" title="←"/>
+                                <connections>
+                                    <action selector="removeTheLastCharesterPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ee-Rg-TZE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3F-zV-YqL">
                                 <rect key="frame" x="94" y="0.0" width="93.5" height="108"/>
                                 <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="cleanPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaL-mR-ilS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rho-z0-1ix">
                                 <rect key="frame" x="187.5" y="0.0" width="94" height="108"/>
                                 <state key="normal" title="+/-"/>
+                                <connections>
+                                    <action selector="signChangePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRU-Mb-sQP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-fD-AVO">
                                 <rect key="frame" x="281.5" y="0.0" width="93.5" height="108"/>
                                 <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFP-7j-OBW"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fN-Hz-sHM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir9-3I-Idd">
                                 <rect key="frame" x="0.0" y="108" width="94" height="107.5"/>
                                 <state key="normal" title="7"/>
                                 <connections>
-                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNy-hI-yDn"/>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkP-RI-71N"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-1G-FPo">
                                 <rect key="frame" x="94" y="108" width="93.5" height="107.5"/>
                                 <state key="normal" title="8"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akD-Zt-jej"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJ6-hD-cwQ">
                                 <rect key="frame" x="187.5" y="108" width="94" height="107.5"/>
                                 <state key="normal" title="9"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZwS-QI-Jlp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbT-3s-mbf">
                                 <rect key="frame" x="281.5" y="108" width="93.5" height="107.5"/>
                                 <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ykq-1r-ZeP"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rsk-BQ-BIQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAx-4R-v7W">
                                 <rect key="frame" x="0.0" y="215.5" width="94" height="108"/>
                                 <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m4O-B7-P2K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xu5-Ss-4n4">
                                 <rect key="frame" x="94" y="215.5" width="93.5" height="108"/>
                                 <state key="normal" title="5"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dg1-rf-xq1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-hS-8rc">
                                 <rect key="frame" x="187.5" y="215.5" width="94" height="108"/>
                                 <state key="normal" title="6"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cz3-zw-e5I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFr-np-sCN">
                                 <rect key="frame" x="281.5" y="215.5" width="93.5" height="108"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCQ-lr-73A"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fq9-TE-L2I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLm-9d-dF5">
                                 <rect key="frame" x="0.0" y="323.5" width="94" height="107.5"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KK5-kg-Lqg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pB5-Vn-ZJ2">
                                 <rect key="frame" x="94" y="323.5" width="93.5" height="107.5"/>
                                 <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kgk-0y-nA7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSd-ee-Gdi">
                                 <rect key="frame" x="187.5" y="323.5" width="94" height="107.5"/>
                                 <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAD-yc-mqi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3t-d7-2v3">
                                 <rect key="frame" x="281.5" y="323.5" width="93.5" height="107.5"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlX-v0-3Ac"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h57-WF-dHp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km7-YD-Aoy">
                                 <rect key="frame" x="0.0" y="431" width="94" height="108"/>
                                 <state key="normal" title="√"/>
+                                <connections>
+                                    <action selector="squareRootPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfg-bn-h1r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-68-HQh">
                                 <rect key="frame" x="94" y="431" width="93.5" height="108"/>
                                 <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZj-wK-QZP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMi-4G-QY5">
                                 <rect key="frame" x="187.5" y="431" width="94" height="108"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="."/>
+                                <connections>
+                                    <action selector="decimalPointPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6M-6t-0a4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-vV-63k">
                                 <rect key="frame" x="281.5" y="431" width="93.5" height="108"/>
                                 <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbz-2w-4xx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xif-Uu-XJT"/>
@@ -233,7 +294,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYE-Pc-MhE">
                                 <rect key="frame" x="0.0" y="128" width="375" height="539"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="embed" identifier="segueInput" id="5uR-fb-WgC"/>
+                                    <segue destination="BYZ-38-t0r" kind="embed" identifier="segueInputData" id="5uR-fb-WgC"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -260,13 +321,13 @@
                                 <segment title="Инженерный"/>
                             </segments>
                             <connections>
-                                <action selector="changeViewControlSegmentControl:" destination="Zs7-Lo-utT" eventType="valueChanged" id="vc9-q4-S87"/>
+                                <action selector="changeVCSegmentControl:" destination="Zs7-Lo-utT" eventType="valueChanged" id="1ae-DK-5J4"/>
                             </connections>
                         </segmentedControl>
                     </navigationItem>
                     <connections>
-                        <outlet property="keyboardConteinerView" destination="YYE-Pc-MhE" id="n3r-Wb-TXO"/>
-                        <outlet property="screenResultLabel" destination="aTa-eb-6rw" id="PlP-sm-rWP"/>
+                        <outlet property="keyboardConteinerView" destination="YYE-Pc-MhE" id="NuN-eq-xk1"/>
+                        <outlet property="screenResultLabel" destination="aTa-eb-6rw" id="N66-tv-Yne"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krj-Mf-CwG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -276,7 +337,7 @@
         <!--инженерный-->
         <scene sceneID="RPO-DJ-cxf">
             <objects>
-                <viewController storyboardIdentifier="EngineeringViewController" id="3BY-G7-8Rm" customClass="EngineeringViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EngineeringVC" id="3BY-G7-8Rm" customClass="EngineeringViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hSW-0F-9Yl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

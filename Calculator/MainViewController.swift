@@ -8,108 +8,185 @@
 import UIKit
 
 class MainViewController: UIViewController, KeyboardDataProtocol {
+   
+    @IBOutlet weak var screenResultLabel: UILabel!
+   
+    @IBOutlet weak var changeViewsSegmentControl: UISegmentedControl!
+    
+    var errorOccurrence = false
+    var enteringNumber = false
+    var dotIsSet = false
+    var operation = ""
+    var firstOperand = 0.0
+    var secondOperand = 0.0
+    var operandValue: Double {
+        get {
+            return Double(screenResultLabel.text!)!
+        }
+        set {
+            let value = "\(newValue)"
+            let valueArray = value.components(separatedBy: ".")
+            if valueArray[1] == "0" {
+                screenResultLabel.text = "\(valueArray[0])"
+            } else {
+                screenResultLabel.text = "\(newValue)"
+            }
+            enteringNumber = true
+        }
+    }
+    
+    @IBOutlet weak var keyboardConteinerView: UIView!
     
     lazy var normalViewController: NormalViewController = {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        var viewController = storyboard.instantiateViewController(withIdentifier: "NormalViewController") as! NormalViewController
-        self.addViewControllerAssChildViewController(chaildViewController: viewController)
-        return viewController
-    }()
-    
-    lazy var engineeringViewController: EngineeringViewController = {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        var viewController = storyboard.instantiateViewController(withIdentifier: "EngineeringViewController") as! EngineeringViewController
-        self.addViewControllerAssChildViewController(chaildViewController: viewController)
-        return viewController
-    }()
-     
-    @IBOutlet weak var screenResultLabel: UILabel!
-    @IBOutlet weak var keyboardConteinerView: UIView!
+           let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+           var viewController = storyboard.instantiateViewController(withIdentifier: "NormalVC") as! NormalViewController
+           self.addViewControllerAsChildViewController(chaildViewController: viewController)
+           return viewController
+       }()
+       
+       lazy var engineeringViewController: EngineeringViewController = {
+           let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+           var viewController = storyboard.instantiateViewController(withIdentifier: "EngineeringVC") as! EngineeringViewController
+           self.addViewControllerAsChildViewController(chaildViewController: viewController)
+           return viewController
+       }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        normalViewController.view.isHidden = false
     }
-  
-    private func addViewControllerAssChildViewController(chaildViewController:UIViewController){
-    addChild(chaildViewController)
-    keyboardConteinerView.addSubview(chaildViewController.view)
-    chaildViewController.view.frame = view.bounds
-    chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-    chaildViewController.didMove(toParent: self)
-}
     
-    @IBAction func changeViewControlSegmentControl(_ sender: UISegmentedControl) {
-        
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueInputData" {
+            let destinationNormalVC = segue.destination as! NormalViewController
+            destinationNormalVC.inputDelegate = self
+        }
+    }
+    
+     func addViewControllerAsChildViewController(chaildViewController:UIViewController){
+      addChild(chaildViewController)
+      keyboardConteinerView.addSubview(chaildViewController.view)
+      chaildViewController.view.frame = view.bounds
+      chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+      chaildViewController.didMove(toParent: self)
+  }
+    
+    @IBAction func changeVCSegmentControl(_ sender: UISegmentedControl) {
+       
         UIView.transition(from: normalViewController.view, to: engineeringViewController.view, duration: 1, options:[.curveEaseOut, .transitionFlipFromLeft, .showHideTransitionViews])
-        normalViewController.view.isHidden = true
-        engineeringViewController.view.isHidden = true
-        if sender.selectedSegmentIndex == 0 {
-            normalViewController.view.isHidden = false
-        } else {
-           engineeringViewController.view.isHidden = false
+               normalViewController.view.isHidden = true
+               engineeringViewController.view.isHidden = true
+               if sender.selectedSegmentIndex == 0 {
+                   normalViewController.view.isHidden = false
+               } else {
+                  engineeringViewController.view.isHidden = false
+               }
+    }
+    
+    
+    func operateWithTwoOperand(operationTwo:(Double, Double) -> Double) {
+        operandValue = operationTwo(firstOperand, secondOperand)
+        enteringNumber = false
+    }
+    
+    func errorMessage(label:UILabel,message:String){
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.2
+        label.text = message
+        errorOccurrence = true
+    }
+    
+    func enteringNumberTransmission(number: String) {
+        if !errorOccurrence {
+           
+            if enteringNumber {
+                screenResultLabel.text = screenResultLabel.text! + number
+            } else {
+                screenResultLabel.text = number
+                enteringNumber = true
+            }
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueInput" {
-            let inputNormalVC = segue.destination as! NormalViewController
-            inputNormalVC.inputDelegate = self
+        func decimalPointTransmission() {
+            if !errorOccurrence {
+                if enteringNumber && !dotIsSet {
+                    screenResultLabel.text = screenResultLabel.text! + "."
+                    dotIsSet = true
+                } else if !enteringNumber && !dotIsSet {
+                    screenResultLabel.text = "0."
+                    enteringNumber = true
+                }
+            }
+        }
+    
+    func operationTransmission(operationType:String) {
+        if !errorOccurrence {
+            operation = operationType
+            firstOperand = operandValue
+            enteringNumber = false
         }
     }
     
-    
-    func numberButtonPress(data: String) {
-        print(data)
-        screenResultLabel.text = data
+    func equalTransmission() {
+        print(operation)
+        if !errorOccurrence {
+            if enteringNumber{
+                secondOperand = operandValue
+                switch operation {
+                case "+": operateWithTwoOperand {$0+$1}
+                case "-": operateWithTwoOperand {$0-$1}
+                case "×": operateWithTwoOperand {$0*$1}
+                case "/":  if secondOperand != 0 {
+                 operateWithTwoOperand {$0/$1}
+                } else {
+                    errorMessage(label: screenResultLabel, message: "Деление на ноль")
+                }
+               
+                default: break
+                }
+            }
+        }
+        enteringNumber = false
+        operation = ""
+        dotIsSet = false
     }
     
-    func operationEntryButtonPress(data: String) {
-        
+    func cleanTrasmission() {
+        firstOperand = 0
+        secondOperand = 0
+        enteringNumber = false
+        screenResultLabel.text = "0"
+        operation = ""
+        errorOccurrence = false
+        dotIsSet = false
+    }
+   
+    func removeTheLastCharesterTransmission() {
+        if enteringNumber && !errorOccurrence {
+            if screenResultLabel.text!.count > 1 {
+                screenResultLabel.text!.remove(at: screenResultLabel.text!.index(before: screenResultLabel.text!.endIndex))
+            } else {
+                screenResultLabel.text = "0"
+                enteringNumber = false
+            }
+            
+        }
     }
     
-    func equalButtonPress() {
-        
+    func signChangeTransmission() {
+        if !errorOccurrence {
+            operandValue = -operandValue
+        }
     }
     
-    func cleanButtonPress() {
-        
+    func squareRootTransmission() {
+        if !errorOccurrence {
+            if operandValue >= 0 {
+                enteringNumber = false
+                operandValue = sqrt(operandValue)
+            } else{
+                errorMessage(label: screenResultLabel, message: "Недопустимая ситуация")
+            }
+        }
     }
-    
-    func remaveTheLastCharesterButtonPress() {
-        
-    }
-    
-    func signChangeButtonPress() {
-        
-    }
-    
-    func squareRootButtonPress() {
-        
-    }
-    
-    func decimalPointSettingButtonPress() {
-        
-    }
-    
-    func percentButtonPress() {
-        
-    }
-    
-    func unitDividedByNumberButtonPress() {
-        
-    }
-    
-    func degreeNumberButtonPress() {
-        
-    }
-    
-    func tenToThePowerNumberButtonPress() {
-        
-    }
-    
-    func factorialNumberButtonPress() {
-        
-    }
-    
 }
