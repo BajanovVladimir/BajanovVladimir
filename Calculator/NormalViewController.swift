@@ -8,7 +8,17 @@
 import UIKit
 
 class NormalViewController: UIViewController {
-
+    
+    var inputDelegate:KeyboardDataProtocol?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func numberPressed(_ sender: UIButton) {
+        inputDelegate?.numberButtonPress(data: sender.currentTitle!)
+    }
+    
   
 }
 

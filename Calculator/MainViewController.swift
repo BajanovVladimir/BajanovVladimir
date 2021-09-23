@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+class MainViewController: UIViewController, KeyboardDataProtocol {
+    
     lazy var normalViewController: NormalViewController = {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         var viewController = storyboard.instantiateViewController(withIdentifier: "NormalViewController") as! NormalViewController
@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
         return viewController
     }()
      
+    @IBOutlet weak var screenResultLabel: UILabel!
     @IBOutlet weak var keyboardConteinerView: UIView!
     
     override func viewDidLoad() {
@@ -49,4 +50,66 @@ class MainViewController: UIViewController {
            engineeringViewController.view.isHidden = false
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueInput" {
+            let inputNormalVC = segue.destination as! NormalViewController
+            inputNormalVC.inputDelegate = self
+        }
+    }
+    
+    
+    func numberButtonPress(data: String) {
+        print(data)
+        screenResultLabel.text = data
+    }
+    
+    func operationEntryButtonPress(data: String) {
+        
+    }
+    
+    func equalButtonPress() {
+        
+    }
+    
+    func cleanButtonPress() {
+        
+    }
+    
+    func remaveTheLastCharesterButtonPress() {
+        
+    }
+    
+    func signChangeButtonPress() {
+        
+    }
+    
+    func squareRootButtonPress() {
+        
+    }
+    
+    func decimalPointSettingButtonPress() {
+        
+    }
+    
+    func percentButtonPress() {
+        
+    }
+    
+    func unitDividedByNumberButtonPress() {
+        
+    }
+    
+    func degreeNumberButtonPress() {
+        
+    }
+    
+    func tenToThePowerNumberButtonPress() {
+        
+    }
+    
+    func factorialNumberButtonPress() {
+        
+    }
+    
 }
