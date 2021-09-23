@@ -2,22 +2,28 @@
 //  ProtocolsFile.swift
 //  Calculator
 //
-//  Created by Владимир Бажанов on 9/22/21.
+//  Created by Владимир Бажанов on 9/23/21.
+//
 
+import UIKit
 
-protocol KeyboardDataProtocol {
-    func numberButtonPress(data:String)
-    func operationEntryButtonPress(data:String)
-    func equalButtonPress(data:String)
-    func cleanButtonPress(data:String)
-    func remaveTheLastCharesterButtonPress(data:String)
-    func signChangeButtonPress(data:String)
-    func squareRootButtonPress(data:String)
-    func decimalPointSettingButtonPress()
-    func percentButtonPress()
-    func unitDividedByNumberButtonPress()
-    func degreeNumberButtonPress()
-    func tenToThePowerNumberButtonPress()
-    func factorialNumberButtonPress()
+class ProtocolsFile: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
-
