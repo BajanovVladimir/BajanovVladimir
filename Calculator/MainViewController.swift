@@ -55,12 +55,6 @@ class MainViewController: UIViewController, KeyboardDataProtocol {
         super.viewDidLoad()
     }
     
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueInputData" {
-            let destinationNormalVC = segue.destination as! NormalViewController
-            destinationNormalVC.inputDelegate = self
-        }
-    }
     
      func addViewControllerAsChildViewController(chaildViewController:UIViewController){
       addChild(chaildViewController)
