@@ -5,7 +5,7 @@
 //  Created by Владимир Бажанов on 9/23/21.
 //
 
-protocol KeyboardDataProtocol{
+protocol KeyboardDataProtocol {
     func enteringNumberTransmission(number:String)
     func decimalPointTransmission()
     func operationTransmission(operationType: String)
@@ -16,3 +16,6 @@ protocol KeyboardDataProtocol{
     func squareRootTransmission()
 }
 
+protocol KeyboardDelegate {
+    var inputDelegate: KeyboardDataProtocol? {get set}
+}

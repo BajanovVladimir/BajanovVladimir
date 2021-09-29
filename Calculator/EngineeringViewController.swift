@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EngineeringViewController: UIViewController {
+class EngineeringViewController: UIViewController, KeyboardDelegate {
 
     var inputDelegate: KeyboardDataProtocol?
 

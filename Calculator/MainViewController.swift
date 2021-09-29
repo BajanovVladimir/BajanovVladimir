@@ -40,28 +40,32 @@ class MainViewController: UIViewController, KeyboardDataProtocol {
     lazy var normalViewController: NormalViewController = {
            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
            var viewController = storyboard.instantiateViewController(withIdentifier: "NormalVC") as! NormalViewController
-           self.addViewControllerAsChildViewController(chaildViewController: viewController)
+           self.addViewControllerAsChildViewController(childViewController: viewController)
            return viewController
        }()
        
        lazy var engineeringViewController: EngineeringViewController = {
            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
            var viewController = storyboard.instantiateViewController(withIdentifier: "EngineeringVC") as! EngineeringViewController
-           self.addViewControllerAsChildViewController(chaildViewController: viewController)
+           self.addViewControllerAsChildViewController(childViewController: viewController)
            return viewController
        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        normalViewController.view.isHidden = false
     }
     
     
-     func addViewControllerAsChildViewController(chaildViewController:UIViewController){
-      addChild(chaildViewController)
-      keyboardConteinerView.addSubview(chaildViewController.view)
-      chaildViewController.view.frame = view.bounds
-      chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-      chaildViewController.didMove(toParent: self)
+     func addViewControllerAsChildViewController(childViewController:UIViewController){
+        guard var childViewController = childViewController as? UIViewController & KeyboardDelegate else {return}
+        childViewController.inputDelegate = self
+        addChild(childViewController)
+        keyboardConteinerView.addSubview(childViewController.view)
+        childViewController.view.frame = keyboardConteinerView.bounds
+        childViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        childViewController.didMove(toParent: self)
   }
     
     @IBAction func changeVCSegmentControl(_ sender: UISegmentedControl) {
