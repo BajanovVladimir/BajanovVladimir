@@ -11,10 +11,13 @@ class NormalViewController: UIViewController, KeyboardDelegate {
 
     var inputDelegate: KeyboardDataProtocol?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
     
     @IBAction func numberPressed(_ sender: UIButton) {
         inputDelegate?.enteringNumberTransmission(number: sender.currentTitle!)
@@ -41,12 +44,8 @@ class NormalViewController: UIViewController, KeyboardDelegate {
         inputDelegate?.removeTheLastCharesterTransmission()
     }
     
-    @IBAction func signChangePressed(_ sender: UIButton) {
-        inputDelegate?.signChangeTransmission()
-    }
-    
-    @IBAction func squareRootPressed(_ sender: UIButton) {
-        inputDelegate?.squareRootTransmission()
+    @IBAction func unaryOperationPressed (_ sender: UIButton){
+        inputDelegate?.unaryOperationTransmission(operationType: sender.currentTitle!)
     }
     
     

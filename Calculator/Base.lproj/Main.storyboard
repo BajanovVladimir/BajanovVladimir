@@ -40,7 +40,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="signChangePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRU-Mb-sQP"/>
+                                    <action selector="unaryOperationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bca-Nl-Zzv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujF-fD-AVO">
@@ -170,7 +170,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="squareRootPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfg-bn-h1r"/>
+                                    <action selector="unaryOperationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAj-aZ-610"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-68-HQh">

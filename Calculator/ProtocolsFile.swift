@@ -4,18 +4,15 @@
 //
 //  Created by Владимир Бажанов on 9/23/21.
 //
-
-protocol KeyboardDataProtocol {
+protocol KeyboardDataProtocol{
     func enteringNumberTransmission(number:String)
     func decimalPointTransmission()
     func operationTransmission(operationType: String)
     func equalTransmission()
     func cleanTrasmission()
     func removeTheLastCharesterTransmission()
-    func signChangeTransmission()
-    func squareRootTransmission()
+    func unaryOperationTransmission(operationType:String)
 }
-
 protocol KeyboardDelegate {
     var inputDelegate: KeyboardDataProtocol? {get set}
 }
