@@ -103,6 +103,7 @@ class MainViewController: UIViewController, KeyboardDataProtocol {
                 enteringNumber = true
             }
         }
+        print(operandValue)
     }
     
         func decimalPointTransmission() {

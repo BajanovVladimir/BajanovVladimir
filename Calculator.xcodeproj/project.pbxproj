@@ -16,6 +16,7 @@
 		0B8906F226DDE7AD00AEED24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8906F126DDE7AD00AEED24 /* Assets.xcassets */; };
 		0B8906F526DDE7AD00AEED24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B8906F326DDE7AD00AEED24 /* LaunchScreen.storyboard */; };
 		0B8A09FF26E94C9000C885BE /* EngineeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A09FE26E94C9000C885BE /* EngineeringViewController.swift */; };
+		0BB4A804270CA1090035B414 /* BrainNarmalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB4A803270CA1090035B414 /* BrainNarmalCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0B8906F426DDE7AD00AEED24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B8906F626DDE7AD00AEED24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B8A09FE26E94C9000C885BE /* EngineeringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringViewController.swift; sourceTree = "<group>"; };
+		0BB4A803270CA1090035B414 /* BrainNarmalCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainNarmalCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				0B8906F326DDE7AD00AEED24 /* LaunchScreen.storyboard */,
 				0B8906F626DDE7AD00AEED24 /* Info.plist */,
 				0B6D0AEC26FC70010083BB42 /* ProtocolsFile.swift */,
+				0BB4A803270CA1090035B414 /* BrainNarmalCalculator.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B8A09FF26E94C9000C885BE /* EngineeringViewController.swift in Sources */,
+				0BB4A804270CA1090035B414 /* BrainNarmalCalculator.swift in Sources */,
 				0B8906ED26DDE7AC00AEED24 /* NormalViewController.swift in Sources */,
 				0B8906E926DDE7AC00AEED24 /* AppDelegate.swift in Sources */,
 				0B8906EB26DDE7AC00AEED24 /* SceneDelegate.swift in Sources */,
