@@ -16,7 +16,10 @@ class MainViewController: UIViewController {
     var dotIsSet = false
     var operandValue: Double {
         get {
-            return Double(screenResultLabel.text!)!
+            guard  let screenResultString = screenResultLabel.text, let screenResultDouble = Double(screenResultString) else {
+                return 0.0
+            }
+            return screenResultDouble
         }
         set {
             let value = "\(newValue)"
