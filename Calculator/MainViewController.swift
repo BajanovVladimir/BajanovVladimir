@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, KeyboardDataProtocol {
+class MainViewController: UIViewController {
     
     @IBOutlet weak var screenResultLabel: UILabel!
     var calculatorBrain = BrainNormalCalculator()
@@ -62,7 +62,19 @@ class MainViewController: UIViewController, KeyboardDataProtocol {
         chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         chaildViewController.didMove(toParent: self)
         }
-    
+    @IBAction func changeVCSegmentControl(_ sender: UISegmentedControl) {
+        UIView.transition(from: normalViewController.view, to: engineeringViewController.view, duration: 1, options:[.curveEaseOut, .transitionFlipFromLeft, .showHideTransitionViews])
+               normalViewController.view.isHidden = true
+               engineeringViewController.view.isHidden = true
+               if sender.selectedSegmentIndex == 0 {
+                   normalViewController.view.isHidden = false
+               } else {
+                  engineeringViewController.view.isHidden = false
+               }
+        }
+}
+extension MainViewController: KeyboardDataProtocol {
+
     func errorMessage() {
         screenResultLabel.text = "invalid operation"
     }
@@ -79,16 +91,7 @@ class MainViewController: UIViewController, KeyboardDataProtocol {
         }
     }
     
-    @IBAction func changeVCSegmentControl(_ sender: UISegmentedControl) {
-        UIView.transition(from: normalViewController.view, to: engineeringViewController.view, duration: 1, options:[.curveEaseOut, .transitionFlipFromLeft, .showHideTransitionViews])
-               normalViewController.view.isHidden = true
-               engineeringViewController.view.isHidden = true
-               if sender.selectedSegmentIndex == 0 {
-                   normalViewController.view.isHidden = false
-               } else {
-                  engineeringViewController.view.isHidden = false
-               }
-        }
+  
     
     func enteringNumberTransmission(number: String) {
         if enteringNumber {
