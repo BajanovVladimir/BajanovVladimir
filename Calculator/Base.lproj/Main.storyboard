@@ -49,8 +49,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFP-7j-OBW"/>
-                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fN-Hz-sHM"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOQ-JO-tFd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir9-3I-Idd">
@@ -86,8 +85,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ykq-1r-ZeP"/>
-                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rsk-BQ-BIQ"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GqD-qc-oGm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAx-4R-v7W">
@@ -123,8 +121,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCQ-lr-73A"/>
-                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fq9-TE-L2I"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHf-iD-hMR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLm-9d-dF5">
@@ -160,8 +157,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlX-v0-3Ac"/>
-                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h57-WF-dHp"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dME-du-R7c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km7-YD-Aoy">
@@ -170,7 +166,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="unaryOperationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAj-aZ-610"/>
+                                    <action selector="unaryOperationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMt-sw-yms"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-68-HQh">
@@ -198,7 +194,7 @@
                                     <color key="titleColor" systemColor="systemIndigoColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="equalPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbz-2w-4xx"/>
+                                    <action selector="operationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="waR-fA-yAC"/>
                                 </connections>
                             </button>
                         </subviews>

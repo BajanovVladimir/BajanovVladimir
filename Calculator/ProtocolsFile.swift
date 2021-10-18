@@ -8,7 +8,6 @@ protocol KeyboardDataProtocol{
     func enteringNumberTransmission(number:String)
     func decimalPointTransmission()
     func operationTransmission(operationType: String)
-    func equalTransmission()
     func cleanTrasmission()
     func removeTheLastCharesterTransmission()
     func unaryOperationTransmission(operationType:String)

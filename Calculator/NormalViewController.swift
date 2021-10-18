@@ -32,10 +32,6 @@ class NormalViewController: UIViewController, KeyboardDelegate {
         inputDelegate?.operationTransmission(operationType: sender.currentTitle!)
     }
     
-    @IBAction func equalPressed(_ sender: UIButton) {
-        inputDelegate?.equalTransmission()
-    }
-    
     @IBAction func cleanPressed(_ sender: UIButton) {
         inputDelegate?.cleanTrasmission()
     }

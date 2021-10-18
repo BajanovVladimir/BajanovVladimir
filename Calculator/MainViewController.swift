@@ -65,6 +65,7 @@ class MainViewController: UIViewController {
         chaildViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         chaildViewController.didMove(toParent: self)
         }
+    
     @IBAction func changeVCSegmentControl(_ sender: UISegmentedControl) {
         UIView.transition(from: normalViewController.view, to: engineeringViewController.view, duration: 1, options:[.curveEaseOut, .transitionFlipFromLeft, .showHideTransitionViews])
                normalViewController.view.isHidden = true
@@ -76,36 +77,35 @@ class MainViewController: UIViewController {
                }
         }
 }
-extension MainViewController: KeyboardDataProtocol {
 
+extension MainViewController: KeyboardDataProtocol {
+   
     func errorMessage() {
         screenResultLabel.text = "invalid operation"
     }
     
-    func passValue(setOperand:Bool){
-        if !calculatorBrain.error {
-        if setOperand{
-        guard let num = Double(operand) else {return}
-        calculatorBrain.setOperand(operand: num)
+    func transferTheOperandToTheBrain () {
+        guard let operandDouble = Double(operand) else {
+            return
         }
-        operandValue = calculatorBrain.result
-        } else {
-            errorMessage()
-        }
+        calculatorBrain.setOperand(operand: operandDouble)
     }
     
+    func displayTheBrainResultOnTheScreen() -> Double {
+        return calculatorBrain.result
+    }
   
     
     func enteringNumberTransmission(number: String) {
         if enteringNumber {
-                operand = operand + number
-            } else {
-                operand = number
-                enteringNumber = true
-            }
-        screenResultLabel.text = operand
-        passValue(setOperand: true)
+            operand = operand + number
+        } else {
+            operand = number
+            enteringNumber = true
         }
+        transferTheOperandToTheBrain()
+        operandValue = displayTheBrainResultOnTheScreen()
+    }
     
         func decimalPointTransmission() {
                 if enteringNumber && !dotIsSet {
@@ -118,26 +118,18 @@ extension MainViewController: KeyboardDataProtocol {
          }
 
     func operationTransmission(operationType:String) {
-        if !calculatorBrain.error {
-        calculatorBrain.typeOfOperation(operation:operationType)
-        calculatorBrain.setOperand(operand:operandValue )
-        operand = "0"
+        calculatorBrain.typeOfOperation(operation: operationType)
         dotIsSet = false
+        operand = ""
         enteringNumber = false
-        }
-        }
-    
-    func equalTransmission() {
-        calculatorBrain.applyEqual()
-        passValue(setOperand: false)
+        operandValue = displayTheBrainResultOnTheScreen()
         }
     
     func cleanTrasmission() {
         enteringNumber = false
         screenResultLabel.text = "0"
-        calculatorBrain.operandArray = [0.0,0.0]
-        calculatorBrain.indexOperand = 0
-        calculatorBrain.operationType = ""
+        calculatorBrain.operandArray = []
+        calculatorBrain.operationType = []
         calculatorBrain.resultValue = 0
         calculatorBrain.error = false
         dotIsSet = false
@@ -151,14 +143,14 @@ extension MainViewController: KeyboardDataProtocol {
                 operand = "0"
                 enteringNumber = false
             }
-            passValue(setOperand: true)
+            transferTheOperandToTheBrain()
+            operandValue = displayTheBrainResultOnTheScreen()
         }
     }
     
     func unaryOperationTransmission(operationType:String) {
         calculatorBrain.unaryOperation(operation: operationType)
-        passValue(setOperand: false)
-        
+        operandValue = displayTheBrainResultOnTheScreen()
     }
 }
 
