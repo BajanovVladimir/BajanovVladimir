@@ -367,26 +367,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="←"/>
+                                <connections>
+                                    <action selector="removeTheLastCharesterPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="ETz-0c-g8z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1V-JV-aMz">
                                 <rect key="frame" x="75" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="C"/>
+                                <connections>
+                                    <action selector="cleanPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="IZm-67-QCd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJj-i8-ZRw">
                                 <rect key="frame" x="150" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="+/-"/>
+                                <connections>
+                                    <action selector="unaryOperationPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="2ns-tH-sD9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rt0-Oz-alu">
                                 <rect key="frame" x="225" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="÷"/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="Mlu-Ia-bPm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYa-KD-ONd">
                                 <rect key="frame" x="300" y="0.0" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="%"/>
+                                <connections>
+                                    <action selector="unaryOperationPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="K1u-Cx-ZWI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdZ-H0-cZ4">
                                 <rect key="frame" x="0.0" y="123.5" width="75" height="123.5"/>
@@ -422,11 +437,17 @@
                                 <rect key="frame" x="225" y="123.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="×"/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="zuI-ja-UlS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcZ-t6-V3d">
                                 <rect key="frame" x="300" y="123.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="xⁿ"/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="jey-ly-Khv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLp-pk-bEX">
                                 <rect key="frame" x="0.0" y="247" width="75" height="124"/>
@@ -462,11 +483,17 @@
                                 <rect key="frame" x="225" y="247" width="75" height="124"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="GfF-3U-eQD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rR-BA-p0q">
                                 <rect key="frame" x="300" y="247" width="75" height="124"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="n!"/>
+                                <connections>
+                                    <action selector="unaryOperationPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="QGW-1Q-pIY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-Gt-Uhi">
                                 <rect key="frame" x="0.0" y="371" width="75" height="123.5"/>
@@ -502,11 +529,17 @@
                                 <rect key="frame" x="225" y="371" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="DSI-ka-RbC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2W-rI-ej8">
                                 <rect key="frame" x="0.0" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="√"/>
+                                <connections>
+                                    <action selector="unaryOperationPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="ETJ-Ox-u4B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufL-ET-lVa">
                                 <rect key="frame" x="75" y="494.5" width="75" height="123.5"/>
@@ -527,16 +560,25 @@
                                 <rect key="frame" x="225" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="10ⁿ"/>
+                                <connections>
+                                    <action selector="unaryOperationPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="IuQ-76-5h3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-RO-ODO">
                                 <rect key="frame" x="300" y="494.5" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="operationButtonPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="fyo-ST-NF9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WU-YT-Xbj">
                                 <rect key="frame" x="300" y="371" width="75" height="123.5"/>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="40"/>
                                 <state key="normal" title="1/x"/>
+                                <connections>
+                                    <action selector="unaryOperationPressed:" destination="3BY-G7-8Rm" eventType="touchUpInside" id="bfk-7Y-qhA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ym2-7J-oFl"/>
