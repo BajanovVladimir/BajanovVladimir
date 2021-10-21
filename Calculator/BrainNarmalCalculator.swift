@@ -109,15 +109,7 @@ class BrainNormalCalculator {
         }
         return 1/number
     }
-    
-    func degreeOfTen (_ degree:Double) -> Double {
-        if degree < 0 {
-            error = true
-            return 0
-        }
-        return pow(10,degree)
-    }
-    
+
     func factorial(_ number:Double) -> Double {
         var result = 1
         let intFlag = number.truncatingRemainder(dividingBy: 1)
@@ -139,7 +131,7 @@ class BrainNormalCalculator {
         case "+/-": resultValue = -result
         case "1/x" : resultValue = unitDividedBy(result)
         case "n!": resultValue = factorial(result)
-        case "10ⁿ" : resultValue = degreeOfTen(result)
+        case "10ⁿ" : resultValue = pow(10,result)
         case "%": resultValue = percent(result)
         default: break
         }
