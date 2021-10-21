@@ -91,8 +91,13 @@ extension MainViewController: KeyboardDataProtocol {
         calculatorBrain.setOperand(operand: operandDouble)
     }
     
-    func displayTheBrainResultOnTheScreen() -> Double {
-        return calculatorBrain.result
+    func displayTheBrainResultOnTheScreen()  {
+        print(calculatorBrain.error)
+        if calculatorBrain.error == true {
+            errorMessage()
+        } else {
+            operandValue = calculatorBrain.result
+        }
     }
   
     
@@ -104,7 +109,7 @@ extension MainViewController: KeyboardDataProtocol {
             enteringNumber = true
         }
         transferTheOperandToTheBrain()
-        operandValue = displayTheBrainResultOnTheScreen()
+        displayTheBrainResultOnTheScreen()
     }
     
         func decimalPointTransmission() {
@@ -122,7 +127,7 @@ extension MainViewController: KeyboardDataProtocol {
         dotIsSet = false
         operand = ""
         enteringNumber = false
-        operandValue = displayTheBrainResultOnTheScreen()
+        displayTheBrainResultOnTheScreen()
         }
     
     func cleanTrasmission() {
@@ -144,13 +149,13 @@ extension MainViewController: KeyboardDataProtocol {
                 enteringNumber = false
             }
             transferTheOperandToTheBrain()
-            operandValue = displayTheBrainResultOnTheScreen()
+            displayTheBrainResultOnTheScreen()
         }
     }
     
     func unaryOperationTransmission(operationType:String) {
         calculatorBrain.unaryOperation(operation: operationType)
-        operandValue = displayTheBrainResultOnTheScreen()
+        displayTheBrainResultOnTheScreen()
     }
 }
 
